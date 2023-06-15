@@ -30,6 +30,14 @@ const FormTodo = ({addTodo}) => {
 
         })
 
+          // Reset the input fields
+        setTodo({
+            title: "",
+            description: "",
+            state: "pending",
+            priority: true
+        });
+
         Swal.fire({
         position: 'center',
         icon: 'success',
